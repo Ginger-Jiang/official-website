@@ -1,33 +1,36 @@
 # server
 
+egg 服务端
 
+## 使用
 
-## QuickStart
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+```shell
+npm i
+npm run dev
+open http://localhost:7001/
 ```
 
-### Deploy
+## 目录结构
 
-```bash
-$ npm start
-$ npm stop
-```
+    |-- app
+    | |-- controller            控制器
+    | |-- middleware            中间件
+    | |-- public                公共资源
+    | | |-- css                 公共CSS
+    | | |-- images              公共图片
+    | | |-- js                  公共js
+    | |-- router                子路由
+    | |-- service               服务
+    | |-- view                  静态页面模板目录
+    | |-- router.js             路由入口
+    |-- config                  全局配置
+    | |-- config.default.js     默认配置(全环境加载)
+    | |-- plugin.js             插件配置
+    |-- README.md
 
-### npm scripts
+## 依赖
 
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
+    - eeg-view-nunjucks: 模板渲染
+    - egg-mysql: mysql 数据库
+    - egg-view-assets: 静态资源(内置)
+    - egg-scripts: 项目启动配置
