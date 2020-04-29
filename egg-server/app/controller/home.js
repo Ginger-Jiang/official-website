@@ -5,7 +5,8 @@ const Controller = require('egg').Controller;
 class HomeController extends Controller {
   async index() {
     const { ctx } = this;
-    ctx.body = 'hi, egg';
+    const users = await this.app.mysql.select('dede_user');
+    ctx.body = users;
   }
 }
 
