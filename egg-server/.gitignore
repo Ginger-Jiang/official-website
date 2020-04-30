@@ -12,3 +12,5 @@ run/
 *.un~
 typings/
 .nyc_output/
+# vscode less 编译插件
+*.less
