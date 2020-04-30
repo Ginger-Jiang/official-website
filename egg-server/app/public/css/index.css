@@ -49,7 +49,22 @@
   transform: translateX(-50%);
 }
 #banner {
-  background-color: green;
+  margin-top: 6px;
+}
+#banner .swiper-slide {
+  height: 450px;
+}
+#banner .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+#banner .swiper-container {
+  --swiper-theme-color: #fff;
+  /* 设置Swiper风格 */
+  --swiper-navigation-color: #fff;
+  /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 30px;
+  /* 设置按钮大小 */
 }
 #main #product {
   background-color: red;

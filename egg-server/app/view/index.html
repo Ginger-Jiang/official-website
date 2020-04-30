@@ -55,7 +55,33 @@
     </header>
 
     <!-- 轮播 -->
-    <section id="banner">轮播图</section>
+    <section id="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="/static/images/home/banner01.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="/static/images/home/banner02.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="/static/images/home/banner03.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
 
     <!--  内容区 -->
     <main id="main">
@@ -69,8 +95,29 @@
 
     <!-- 尾部 -->
     <footer id="footer">尾巴</footer>
+
+    <!-- JS -->
     <script src="/static/lib/js/jquery-1.11.3.min.js"></script>
     <script src="/static/lib/js/swiper.min.js"></script>
     <script src="/static/lib/js/bootstrap.min.js"></script>
+
+    <script>
+      // 轮播图
+      var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true, //可选选项，自动滑动
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+    </script>
   </body>
 </html>
