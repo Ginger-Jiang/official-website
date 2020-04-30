@@ -1,0 +1,22 @@
+#header {
+  min-width: 100%;
+  z-index: 999;
+  margin: auto;
+  height: 90px;
+  background-color: blue;
+}
+#banner {
+  background-color: green;
+}
+#main #product {
+  background-color: red;
+}
+#main #solution {
+  background-color: red;
+}
+#main #about {
+  background-color: red;
+}
+#footer {
+  background-color: yellow;
+}

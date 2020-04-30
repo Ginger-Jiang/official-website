@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/static/lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/lib/css/swiper.min.css" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <title>Ginger</title>
   </head>
   <body>
-    Hi {{userList[0].uname}}
-    <ul>
-      {% for item in userList %}
-      <li class="item">
-        <a href="{{ item.url }}">{{ item.uname }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    <script src="/static/js/index.js"></script>
+    <!-- 头部 -->
+    <header id="header">头部</header>
+
+    <!-- 轮播 -->
+    <section id="banner">轮播图</section>
+
+    <!--  内容区 -->
+    <main id="main">
+      <!-- 产品 -->
+      <section id="product">产品</section>
+      <!-- 解决方案 -->
+      <section id="solution">解决方案</section>
+      <!-- 关于我们 -->
+      <section id="about">关于我们</section>
+    </main>
+
+    <!-- 尾部 -->
+    <footer id="footer">尾巴</footer>
+    <script src="/static/lib/js/jquery-1.11.3.min.js"></script>
+    <script src="/static/lib/js/swiper.min.js"></script>
+    <script src="/static/lib/js/bootstrap.min.js"></script>
   </body>
 </html>
