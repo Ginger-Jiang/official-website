@@ -1,0 +1,80 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #000000;
+  text-size-adjust: 100%;
+  font: 14px '微软雅黑', 'Arial Narrow', HELVETICA;
+}
+
+/*超链接默认设置*/
+a:link,
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bf5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active {
+  color: #000;
+}
+
+ul,
+ol {
+  list-style: none outside none;
+}
+
+ul li,
+ol li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'iconfont'; /* project id 1792845 */
+  src: url('//at.alicdn.com/t/font_1792845_dzm0sgrrv1b.eot');
+  src: url('//at.alicdn.com/t/font_1792845_dzm0sgrrv1b.eot?#iefix')
+      format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1792845_dzm0sgrrv1b.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1792845_dzm0sgrrv1b.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1792845_dzm0sgrrv1b.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1792845_dzm0sgrrv1b.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
