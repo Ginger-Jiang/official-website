@@ -66,10 +66,40 @@
   --swiper-navigation-size: 30px;
   /* 设置按钮大小 */
 }
-#main #product {
-  background-color: red;
-}
 #main #solution {
+  box-sizing: border-box;
+}
+#main #solution > section {
+  height: 400px;
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main #solution > section .content {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+#main #solution > section .content p {
+  margin: 20px 0 30px;
+}
+#main #solution > section .content a em {
+  margin-right: 6px;
+}
+#main #solution > section:nth-child(1) {
+  background: url('/static/images/home/solution-bg-01.png');
+}
+#main #solution > section:nth-child(2) {
+  background: url('/static/images/home/solution-bg-02.png');
+}
+#main #solution > section:nth-child(3) {
+  background: url('/static/images/home/solution-bg-03.png');
+}
+#main #solution > section:nth-child(4) {
+  background: url('/static/images/home/solution-bg-04.png');
+}
+#main #product {
   background-color: red;
 }
 #main #about {
