@@ -286,6 +286,127 @@
   font-size: 14px;
   margin-top: 280px;
 }
+#main #news .tit {
+  line-height: 86px;
+  font-weight: 300;
+  color: #333;
+  height: 86px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  padding-top: 60px;
+}
+#main #news > a .latest-news {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+#main #news > a .latest-news > img {
+  height: 220px;
+  width: 300px;
+}
+#main #news > a .latest-news .fr {
+  width: 900px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#main #news > a .latest-news .fr h5 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #222222;
+  line-height: 60px;
+  padding-bottom: 15px;
+}
+#main #news > a .latest-news .fr p {
+  font-size: 14px;
+  color: #777;
+  line-height: 30px;
+}
+#main #news > a .latest-news .fr .p1 {
+  display: flex;
+  justify-content: space-between;
+  color: #222;
+  margin-top: 50px;
+  font-size: 14px;
+}
+#main #news > a .latest-news .fr .p1 .sp1 {
+  color: #007bf5;
+  padding-right: 35px;
+  background: url(../images/ic_into_02.png) no-repeat right center;
+}
+#main #news > a .latest-news:hover .fr .p1 .sp1 {
+  background-image: url(../images/ic_into_01.png);
+}
+#main #news > a .latest-news:hover h5 {
+  color: #007bf5;
+}
+#main #news > ul {
+  width: 1200px;
+  display: flex;
+  margin: 30px auto 95px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #eeeeee;
+}
+#main #news > ul li {
+  width: 49%;
+}
+#main #news > ul li a {
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  height: 110px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#main #news > ul li a .fl {
+  width: 100px;
+  text-align: center;
+  position: relative;
+}
+#main #news > ul li a .fl::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 60px;
+  background-color: #eeeeee;
+}
+#main #news > ul li a .fl span {
+  font-size: 40px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #666666;
+  line-height: 40px;
+}
+#main #news > ul li a .fl p {
+  color: #999999;
+  font-size: 14px;
+  line-height: 20px;
+}
+#main #news > ul li a .fr {
+  width: calc(100% - 120px);
+}
+#main #news > ul li a .fr h5 {
+  color: #222;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+#main #news > ul li a .fr p {
+  margin-top: 15px;
+  color: #777;
+  font-size: 14px;
+}
+#main #news > ul li:hover .fr h5,
+#main #news > ul li:hover .fl p,
+#main #news > ul li:hover .fl span {
+  color: #007bf5;
+}
 #main #help {
   background: #f4f4f4;
   margin-top: 80px;
