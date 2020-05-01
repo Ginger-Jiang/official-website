@@ -238,7 +238,53 @@
   color: #777;
 }
 #main #about {
-  background-color: red;
+  background: url(/static/images/home/bg_hlzzjs.png) center center;
+  height: 430px;
+}
+#main #about .wrap {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+#main #about .wrap .fl {
+  width: 205px;
+  height: 205px;
+  margin-top: 100px;
+}
+#main #about .wrap .fr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+#main #about .wrap .fr .tit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#main #about .wrap .fr .tit span {
+  font-size: 32px;
+  line-height: 1;
+  color: #333;
+}
+#main #about .wrap .fr p {
+  color: #555555;
+  font-size: 14px;
+  line-height: 30px;
+}
+#main #about .wrap > a {
+  width: 80px;
+  height: 32px;
+  background: #007bf5;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  line-height: 32px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 280px;
 }
 #footer {
   background-color: yellow;
