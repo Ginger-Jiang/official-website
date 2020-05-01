@@ -26,6 +26,10 @@ td {
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   color: #000000;
   text-size-adjust: 100%;

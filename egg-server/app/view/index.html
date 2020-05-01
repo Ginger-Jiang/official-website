@@ -148,8 +148,83 @@
           </div>
         </section>
       </section>
+
       <!-- 产品 -->
-      <section id="product"></section>
+      <section id="product">
+        <div class="tit">
+          <h3>主打产品</h3>
+          <div class="tit-line"></div>
+        </div>
+        <!-- 切换 -->
+        <div class="carousel">
+          <a class="prev"></a>
+          <ul>
+            <li>
+              <a href="javascript:">
+                <div class="imgbox">
+                  <img src="/static/images/home/solution-bg-04.png" />
+                </div>
+                <div class="text">
+                  <h5>系统集成</h5>
+                  <p>
+                    IT基础设置，平台咨询，规划，设计与建设：
+                    基础网络结构化布线，中心机房，网络通信，网络安全，平台系统软件等IT基础设施的规划设计与建设
+                    核心数据系统（IDC）的咨询，规划设计与建设：
+                    服务器，小型机，存储，数据库，数据监测，容灾备份，数据迁移，数据虚拟化等核心数据系统的规划设计与建设
+                    视频会议系统咨询，规划设计与建设：
+                    远程视频会议，远程教学等系统的规划设计与建设
+                    安防监控系统咨询，规划设计与建设：
+                    环境监控，门禁，温湿度监测报警，范围监测报警，三维电子地图，智能停车管理，监控大屏，监控管理平台等安防监控系统的规划设计与建设
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <div class="imgbox">
+                  <img src="/static/images/home/solution-bg-04.png" />
+                </div>
+                <div class="text">
+                  <h5>IT外包</h5>
+                  <p>电脑维修</p>
+                  <p>桌面设备软硬件</p>
+                  <p>网络设备、服务器、存储设备</p>
+                  <p>机房环境监控、监控系统等设备</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <div class="imgbox">
+                  <img src="/static/images/home/solution-bg-04.png" />
+                </div>
+                <div class="text">
+                  <h5>服务器维修</h5>
+                  <p>IBM服务器上门快修</p>
+                  <p>DELL服务器上门快修</p>
+                  <p>HP服务器上门快修</p>
+                  <p>Oracle/sun上门快修</p>
+                  <p>EMC存储上门快修</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:">
+                <div class="imgbox">
+                  <img src="/static/images/home/solution-bg-04.png" />
+                </div>
+                <div class="text">
+                  <h5>软件服务</h5>
+                  <p>软件研发</p>
+                  <p>微信开发</p>
+                  <p>移动APP</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a class="next"></a>
+        </div>
+      </section>
       <!-- 关于我们 -->
       <section id="about">关于我们</section>
     </main>
@@ -160,6 +235,7 @@
     <!-- JS -->
     <script src="/static/lib/js/jquery-1.11.3.min.js"></script>
     <script src="/static/lib/js/swiper.min.js"></script>
+    <script src="/static/lib/js/jquery.anoslide.js"></script>
     <script src="/static/lib/js/bootstrap.min.js"></script>
 
     <script>
@@ -178,6 +254,18 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+      })
+      $(function () {
+        //主打产品
+        console.log(11)
+
+        $('.carousel ul').anoSlide({
+          items: 3,
+          speed: 500,
+          prev: 'a.prev',
+          next: 'a.next',
+          delay: 100,
+        })
       })
     </script>
   </body>
