@@ -333,10 +333,10 @@
 #main #news > a .latest-news .fr .p1 .sp1 {
   color: #007bf5;
   padding-right: 35px;
-  background: url(../images/ic_into_02.png) no-repeat right center;
+  background: url(/static/images/home/ic_into_02.png) no-repeat right center;
 }
 #main #news > a .latest-news:hover .fr .p1 .sp1 {
-  background-image: url(../images/ic_into_01.png);
+  background-image: url(/static/images/home/ic_into_01.png);
 }
 #main #news > a .latest-news:hover h5 {
   color: #007bf5;
