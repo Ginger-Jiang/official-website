@@ -507,6 +507,71 @@
   width: 20px;
   background-color: #1083f5;
 }
-#footer {
-  background-color: yellow;
+#footer .top {
+  background: url(/static/images/footer-bg.png) no-repeat center center;
+  max-height: 340px;
+  box-sizing: border-box;
+}
+#footer .top .link {
+  padding: 25px 0;
+  border-bottom: 2px solid #31455f;
+  text-align: center;
+}
+#footer .top .link p {
+  font-size: 14px;
+  color: #70849d;
+  line-height: 20px;
+}
+#footer .top .link p a {
+  color: #70849d;
+  margin-left: 20px;
+}
+#footer .top .flex {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .top .flex ul {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+#footer .top .flex ul li {
+  margin-right: 30px;
+}
+#footer .top .flex ul li a {
+  line-height: 1;
+  margin-bottom: 15px;
+  display: block;
+  font-size: 14px;
+  color: #70849d;
+}
+#footer .top .flex ul li a:first-child {
+  color: #aac8ed;
+  margin-bottom: 25px;
+}
+#footer .top .flex ul li a:hover {
+  color: #aac8ed;
+}
+#footer .top .flex ul li p {
+  color: #aac8ed;
+  font-size: 14px;
+  display: flex;
+  line-height: 24px;
+  max-width: 170px;
+  margin-bottom: 13px;
+  justify-content: space-between;
+}
+#footer .top .flex ul li p img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+#footer .bottom {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #70849d;
+  background-color: #122039;
 }
